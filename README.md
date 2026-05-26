@@ -11,6 +11,6 @@ This repository provides production-ready prompt templates, automated data proce
 
 ## 📦 Installation & Quick Start
 ```bash
-git clone [https://github.com/sdn6517-cmd/auto-prompt-backoffice.git](https://github.com/YOUR_GITHUB_ID/auto-prompt-backoffice.git)
+git clone [https://github.com/sdn6517-cmd/auto-prompt-backoffice.git](https://github.com/sdn6517-cmd/auto-prompt-backoffice.git)
 cd auto-prompt-backoffice
 pip install -r requirements.txt
