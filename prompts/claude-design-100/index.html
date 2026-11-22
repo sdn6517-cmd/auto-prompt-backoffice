@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클로드디자인100_BB — 100 Claude 디자인 프롬프트</title>
+<meta name="description" content="클로드로 브랜딩·로고·패키지·UI·랜딩·타이포·썸네일을 설계하는 100개의 디자인 프롬프트. 카드를 누르면 바로 복사됩니다. by Brandbuilder">
+<meta property="og:title" content="클로드디자인100_BB">
+<meta property="og:description" content="크리에이티브 디렉터처럼 디자인하세요. 100개 프롬프트, 10개 카테고리, 로그인 없이.">
+<link rel="icon" href="data:image/jpeg;base64,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">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --yellow:#FEC200;
+  --yellow-deep:#E5A800;
+  --ink:#111111;
+  --ink-soft:#3A3733;
+  --paper:#F4F2ED;
+  --card:#FFFFFF;
+  --muted:#8B857A;
+  --line:#E2DED4;
+  --coral:#E8734A;
+  --sans:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,'Malgun Gothic',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --rail:236px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;font-size:15px;line-height:1.6}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:50;background:var(--yellow);border-bottom:2px solid var(--ink)}
+.bar-in{max-width:1320px;margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand img{width:30px;height:30px;border-radius:6px;display:block}
+.brand b{font-size:15px;letter-spacing:-.02em;font-weight:800}
+.brand span{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:#6B5400;margin-top:-2px}
+.search{flex:1;display:flex;align-items:center;gap:9px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:7px 16px;min-width:0}
+.search input{border:0;outline:0;background:transparent;font-size:14px;width:100%;font-family:inherit;color:var(--ink)}
+.search input::placeholder{color:#A9A296}
+.search kbd{font-family:var(--mono);font-size:10px;border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--muted);flex-shrink:0}
+.counter{flex-shrink:0;font-family:var(--mono);font-size:11px;letter-spacing:.06em;background:var(--ink);color:var(--yellow);padding:8px 13px;border-radius:999px;white-space:nowrap}
+.counter b{color:#fff}
+
+/* ---------- hero ---------- */
+.hero{background:var(--yellow);border-bottom:2px solid var(--ink);overflow:hidden}
+.hero-in{max-width:1320px;margin:0 auto;padding:52px 22px 44px;position:relative}
+.aster{position:absolute;right:34px;top:16px;font-size:170px;line-height:1;color:var(--coral);opacity:.9;user-select:none;pointer-events:none}
+.hero h1{font-size:clamp(34px,6.4vw,74px);line-height:.98;letter-spacing:-.035em;font-weight:800;margin:0 0 14px;max-width:14ch}
+.hero h1 em{font-style:normal;font-family:var(--mono);font-weight:700;letter-spacing:-.04em}
+.hero .lead{font-size:clamp(15px,2vw,19px);font-weight:600;margin:0 0 6px;color:#3B2E00}
+.hero .sub{font-size:14px;color:#5C4A00;max-width:52ch;margin:0 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--ink);color:var(--yellow);border-radius:999px;padding:7px 15px;font-size:12.5px;font-weight:600}
+.chip.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+
+/* ---------- toolbar ---------- */
+.tools{position:sticky;top:52px;z-index:40;background:var(--paper);border-bottom:1px solid var(--line)}
+.tools-in{max-width:1320px;margin:0 auto;padding:10px 22px;display:flex;gap:8px;align-items:center;overflow-x:auto;scrollbar-width:none}
+.tools-in::-webkit-scrollbar{display:none}
+.tg{border:1.5px solid var(--line);background:#fff;color:var(--ink-soft);border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:600;white-space:nowrap;transition:.14s}
+.tg:hover{border-color:var(--ink)}
+.tg[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tg.star[aria-pressed="true"]{background:var(--coral);border-color:var(--coral)}
+.spacer{flex:1;min-width:8px}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1320px;margin:0 auto;padding:26px 22px 70px;display:grid;grid-template-columns:var(--rail) 1fr;gap:34px;align-items:start}
+.rail{position:sticky;top:112px}
+.rail h4{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--muted);margin:0 0 10px;font-weight:400}
+.rail a{display:flex;gap:10px;align-items:baseline;text-decoration:none;padding:7px 10px;border-radius:8px;border-left:2px solid transparent;transition:.14s}
+.rail a:hover{background:#EBE7DE}
+.rail a.on{border-left-color:var(--ink);background:#fff}
+.rail a i{font-family:var(--mono);font-style:normal;font-size:11px;color:var(--muted);width:18px;flex-shrink:0}
+.rail a b{font-size:13.5px;font-weight:600}
+.rail a.on i{color:var(--coral)}
+
+.cathead{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:9px;margin:0 0 20px}
+.cathead .num{font-family:var(--mono);font-size:13px;color:var(--coral);font-weight:700}
+.cathead h2{font-size:23px;margin:0;letter-spacing:-.02em;font-weight:800}
+.cathead .sub{margin-left:auto;font-size:12.5px;color:var(--muted);text-align:right}
+section.cat{margin-bottom:52px;scroll-margin-top:128px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+
+/* ---------- card ---------- */
+.pc{position:relative;overflow:hidden;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:16px 16px 44px;transition:transform .13s,box-shadow .13s,border-color .13s;display:block;width:100%}
+.pc:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:5px 6px 0 rgba(17,17,17,.1)}
+.pc:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.pc .no{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.06em}
+.pc.used .no::after{content:' ✓';color:var(--coral)}
+.pc.used{border-color:#D9D2C2;background:#FDFCF9}
+.pc .tx{margin:9px 0 0;font-size:13.6px;line-height:1.62;color:var(--ink-soft);word-break:keep-all}
+.pc .tx mark{background:var(--yellow);color:var(--ink);padding:0 2px;border-radius:2px}
+.pc .tx b{font-weight:700;color:var(--ink);background:#FBE9AE;padding:0 3px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.pc .act{position:absolute;left:16px;right:16px;bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.pc .hint{font-size:11.5px;color:var(--muted);font-weight:600}
+.fav{border:0;background:transparent;font-size:15px;line-height:1;padding:4px;color:var(--line);transition:.14s}
+.fav:hover{color:var(--coral);transform:scale(1.15)}
+.fav.on{color:var(--coral)}
+.pc .wipe{position:absolute;inset:0;background:var(--ink);color:var(--yellow);display:flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:15px;letter-spacing:.02em;transform:translateX(-101%);transition:transform .26s cubic-bezier(.7,0,.2,1)}
+.pc.copied .wipe{transform:translateX(0)}
+.pc .wipe span{font-family:var(--mono);font-size:12px;opacity:.75}
+
+.empty{padding:60px 10px;text-align:center;color:var(--muted)}
+.empty b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#EDE9E1;padding:48px 22px 40px;border-top:2px solid var(--ink)}
+.fin{max-width:1320px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;align-items:flex-start}
+footer h5{margin:0 0 8px;font-size:15px;color:#fff;letter-spacing:-.01em}
+footer p{margin:0;font-size:13px;color:#9C968A;max-width:44ch}
+footer .mail{display:inline-flex;align-items:center;gap:8px;margin-top:12px;background:var(--yellow);color:var(--ink);text-decoration:none;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px}
+footer .dm{font-family:var(--mono);font-size:12px;color:var(--yellow);margin-top:10px;display:block}
+.sig{width:100%;border-top:1px solid #2A2724;margin-top:34px;padding-top:16px;font-family:var(--mono);font-size:11px;color:#6F6A60;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ---------- toast ---------- */
+#toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,260%);background:var(--ink);color:var(--yellow);padding:12px 20px;border-radius:999px;font-size:13.5px;font-weight:700;z-index:99;transition:transform .24s cubic-bezier(.6,0,.2,1);box-shadow:0 8px 24px rgba(0,0,0,.22);max-width:90vw;text-align:center}
+#toast.show{transform:translate(-50%,0)}
+
+@media (max-width:960px){
+  :root{--rail:0px}
+  .wrap{grid-template-columns:1fr;gap:0;padding-top:18px}
+  .rail{display:none}
+  .aster{font-size:110px;right:10px;top:6px;opacity:.75}
+  .hero-in{padding:38px 20px 32px}
+  .bar-in{flex-wrap:wrap;padding:9px 16px;gap:10px}
+  .search{order:3;width:100%;flex-basis:100%}
+  .search kbd{display:none}
+  .tools{top:96px}
+  html{scroll-behavior:auto}
+  .cathead .sub{display:none}
+  .grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#top">
+      <img id="brandLogo" src="" alt="Brandbuilder">
+      <span style="display:block">
+        <b>클로드디자인100_BB</b>
+        <span>BRANDBUILDER</span>
+      </span>
+    </a>
+    <label class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8B857A" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="찾기 — 로고, 패키지, 썸네일, 001 …" autocomplete="off">
+      <kbd>/</kbd>
+    </label>
+    <div class="counter">복사 <b id="cnt">0</b> / 100</div>
+  </div>
+</header>
+<script>
+  /* 로고 이미지는 파비콘과 동일한 데이터를 재사용 */
+  document.getElementById('brandLogo').src = document.querySelector('link[rel="icon"]').href;
+</script>
+
+<div class="hero" id="top">
+  <div class="hero-in">
+    <div class="aster">✳</div>
+    <h1><em>100</em> CLAUDE<br>디자인 프롬프트</h1>
+    <p class="lead">크리에이티브 디렉터처럼 디자인하세요.</p>
+    <p class="sub">카드를 누르면 프롬프트가 그대로 복사됩니다. 대괄호 <b style="font-family:var(--mono);font-size:13px">[ ]</b> 안을 당신의 브랜드로 바꿔 클로드에 붙여넣으세요. 어떤 항목이든 3가지 방향을 먼저 요청한 다음, 가장 좋은 것을 더 밀고 나가면 됩니다.</p>
+    <div class="chips">
+      <span class="chip">10개 카테고리</span>
+      <span class="chip">100개 프롬프트</span>
+      <span class="chip ghost">로그인 없이 사용</span>
+      <span class="chip ghost">무료</span>
+    </div>
+  </div>
+</div>
+
+<nav class="tools">
+  <div class="tools-in" id="chipbar"></div>
+</nav>
+
+<div class="wrap">
+  <aside class="rail">
+    <h4>CATEGORY</h4>
+    <div id="rail"></div>
+  </aside>
+  <main id="list"></main>
+</div>
+
+<footer>
+  <div class="fin">
+    <div>
+      <h5>클로드디자인100_BB</h5>
+      <p>브랜드 기획부터 운영까지, 실무에서 바로 쓰는 디자인 프롬프트 모음. 브랜드빌더가 만들고 씁니다.</p>
+      <a class="mail" href="mailto:b612pink@naver.com?subject=[클로드디자인100_BB] 문의">contact us — b612pink@naver.com</a>
+      <span class="dm">or DM — Brandbuilder —</span>
+    </div>
+    <div>
+      <h5>사용 방법</h5>
+      <p>① 카테고리에서 목적을 고른다 → ② 카드를 눌러 복사한다 → ③ 대괄호를 채워 클로드에 붙여넣는다 → ④ 3안을 받고 하나를 고른다.</p>
+    </div>
+  </div>
+  <div class="sig">
+    <span>-by Brandbuilder-</span>
+    <span>100 CLAUDE DESIGN PROMPTS · v1.0</span>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const CATS=[
+ {n:"01",name:"브랜딩",sub:"관점이 있는 아이덴티티 시스템"},
+ {n:"02",name:"로고 디자인",sub:"16픽셀에서도 살아남는 마크"},
+ {n:"03",name:"제품 포스터",sub:"한 가지 아이디어를 전달하는 단일 이미지"},
+ {n:"04",name:"소셜 미디어",sub:"한 브랜드처럼 보이는 피드"},
+ {n:"05",name:"패키징",sub:"진열 존재감과 언박싱 순간"},
+ {n:"06",name:"UI / UX",sub:"직관적으로 느껴지는 인터페이스"},
+ {n:"07",name:"랜딩 페이지",sub:"하나의 임무를 가진 페이지"},
+ {n:"08",name:"타이포그래피",sub:"타입 선택이 메시지를 전달한다"},
+ {n:"09",name:"썸네일",sub:"클릭이 모든 것을 결정한다"},
+ {n:"10",name:"프레젠테이션",sub:"설득은 슬라이드 순서에서 나온다"}
+];
+const P=[
+[1,1,`당신은 브랜드 전략가입니다. [brand]를 [main competitor]와 대비해 포지셔닝하세요: 우리가 '적'으로 삼는 아이디어(our enemy idea), 우리의 신념, 우리의 목소리를 각각 3개의 형용사로 표현하고, 고객의 머릿속에 점유하고 싶은 한 단어를 정하세요.`],
+[2,1,`일관성을 위해 이 브랜드를 감사(audit)하세요: [describe/paste assets]. 목소리, 색상 또는 서체가 시스템을 깨뜨리는 모든 지점을 나열하고, 그것이 신뢰에 얼마나 큰 비용을 초래하는지에 따라 순위를 매기세요.`],
+[3,1,`당신은 크리에이티브 디렉터입니다. [brand]의 완전한 아이덴티티를 구축하세요: 성격을 나타내는 형용사 3개, 헥스 코드가 포함된 5색 팔레트, 폰트 페어링, 로고 방향 3가지, 그리고 이미지 생성기에 붙여넣을 수 있는 무드보드 설명.`],
+[4,1,`[brand]의 브랜드 가이드라인을 10가지 강력한 규칙으로 작성하세요 — 항상 지켜야 할 5가지, 절대 하지 말아야 할 5가지 — 각 항목에 한 줄 이유를 덧붙이세요. 규칙 10은 트렌드 압박을 받을 때 우리가 취하는 행동에 대해 쓰세요.`],
+[5,1,`[brand]의 언어적 아이덴티티를 만드세요: 태그라인, 우리가 거절한 태그라인 3개와 그 이유, 엘리베이터 설명(elevator description), 그리고 고객이 반복할 때까지 카피가 계속해서 사용해야 할 문구 5개.`],
+[6,1,`당신은 네이밍 컨설턴트입니다. [product/company]를 위한 이름 15개를 생성하세요: 서술적(descriptive) 5개, 감성적(evocative) 5개, 발명된 단어 5개. 각 이름의 발음상 함정(pronunciation traps)을 확인하고, .com 스타일 핸들 아이디어를 제시하세요.`],
+[7,1,`[company]의 브랜드 아키텍처를 [N]개의 제품 기준으로 설계하세요: 마스터 브랜드를 사용할 때, 서브브랜드를 사용할 때, 그리고 아직 만들지 않은 다음 3개 제품의 네이밍 논리를 제시하세요.`],
+[8,1,`이 5개의 고객 인용문을 브랜드 보이스 가이드라인으로 전환하세요 — 그들이 문제를 어떻게 표현하는지 추출하고 그것을 우리의 어휘로 규범화하세요: [paste quotes].`],
+[9,1,`당신은 리브랜딩 자문가입니다. [Brand]가 [reason] 때문에 구식으로 느껴집니다. 무엇을 유지할지(에쿼티), 무엇을 없앨지, 충성 고객이 배신감이 아니라 진화로 받아들이게 할 3단계 롤아웃 계획을 알려주세요.`],
+[10,1,`[brand]의 다음 캠페인을 위한 무드보드 브리프를 만드세요: 아트 디렉션(조명, 질감, 시대, 분위기)이 포함된 이미지 설명 8개를 이미지 생성기에 하나씩 붙여넣을 수 있게 작성하세요.`],
+[11,2,`당신은 로고 디자이너입니다. [brand]을(를) 위한 5가지 로고 콘셉트를 제안해 주세요: 각 콘셉트마다 한 문장으로 핵심 아이디어, 기하학적 구성(도형/구조), 그리고 파비콘 크기에서 왜 효과적인지 설명해 주세요.`],
+[12,2,`이 로고를 주니어의 작업을 검토하는 디자인 디렉터처럼 비평해 주세요: [describe/attach]. 독창성, 확장성, 시대적 위험(era-risk)을 다루고, 가장 크게 개선할 수 있는 한 가지 변경을 제안해 주세요.`],
+[13,2,`[brand initials]의 레터마크 브리프를 설계하세요: 3가지 구성 접근법(기하학적, 휴머니스트, 네거티브 스페이스), 각 접근법에 대해 깨끗한 배경에서 사용할 이미지 생성 프롬프트를 포함하세요.`],
+[14,2,`[brand]의 로고 사용 규칙을 만드세요: 최소 크기, 클리어 스페이스 공식, 금지된 처리(구체적인 오용 6가지 나열), 그리고 승인된 색상 조합과 헥스 코드.`],
+[15,2,`당신은 기호학자입니다. [industry]와 관련된 시각 기호 10가지를 나열하고, 피해야 할 진부한 기호들을 표시한 뒤, [core value]를 전달하면서도 예상 밖인 기호 3가지를 제안하세요.`],
+[16,2,`[brand]의 로고 마크를 위한 이미지 생성 프롬프트를 작성하세요: 플랫 벡터 스타일, 단일 색상, 기하학적, 흰색 배경 — 두 명의 디자이너가 동일하게 그릴 수 있도록 마크 자체를 정확히 묘사하세요.`],
+[17,2,`[brand]'s mark를 위한 로고 애니메이션을 기획하세요: 빌드, 공개, 변형의 3가지 모션 콘셉트를 모션 디자이너를 위해 프레임별로 설명하되, 각 콘셉트는 2초 미만으로 기술하세요.`],
+[18,2,`당신은 브랜드 역사학자입니다. 지난 30년간 [industry]의 로고들이 어떻게 진화했는지, 현재의 시각적 트렌드, 그리고 향후 방향(내 새 마크가 10년 동안 지속되려면 어디로 가야 하는지)을 보여 주세요.`],
+[19,2,`기존 로고 [describe]을(를) 가져와 반응형 시스템을 설계하세요: 전체 락업(full lockup), 가로형(horizontal), 스택형(stacked), 아이콘 전용(icon-only) — 각 크기에서 무엇이 생략되는지와 정확한 브레이크포인트 로직을 기술하세요.`],
+[20,2,`[brand name]을(를) 위한 워드마크 처리 5가지를 생성하세요: 각 처리마다 실제 폰트 제안, 굵기(weight), 트래킹(tracking), 그리고 소유 가능하게 만드는 한 가지 커스텀 수정(자르기, 합자, 각도)을 제시하세요.`],
+[21,3,`당신은 아트 디렉터입니다. [product]의 제품 포스터를 디자인하세요: 하나의 시각적 은유, 6단어 미만의 헤드라인, 레이아웃 그리드, 조명 방향, 그리고 4:5 비율의 정확한 이미지 생성 프롬프트.`],
+[22,3,`세 가지 감성 온도(미니멀하고 차분함, 대담하고 시끄러움, 초현실적이고 꿈같음)로 [product]의 포스터 콘셉트 3개를 만드세요. 동일한 제품 진실, 세 가지 분위기.`],
+[23,3,`[product]의 히어로 제품 샷에 대한 전체 아트 디렉션을 작성하세요: 카메라 앵글, 초점 거리 느낌, 배경, 표면, 그림자 거동을 포함한 조명 세팅, 소품 규칙(최대 소품 2개).`],
+[24,3,`[product]용 포스터 시리즈(3장)를 디자인하세요. 각 포스터는 하나의 반대를 시각적으로 해소해야 합니다: [list 3 objections]. 각 레이아웃과 그 헤드라인을 설명하세요.`],
+[25,3,`당신은 리테일 디자이너입니다. 이 포스터 콘셉트를 다음 4가지 포맷에 맞게 적용하세요: IG 피드 4:5, 스토리 9:16, 빌보드 16:9(가로), A4 인쇄 — 각 사이즈에서 계층 구조(우선순위)는 어떻게 변화하나요: [describe concept].`],
+[26,3,`이미지 없이 타이포그래피만으로 된 [product] 포스터를 만드세요. 헤드라인, 타입 시스템(사이즈, 굵기), 단일 색상, 그리고 공백이 빠진 사진의 역할을 어떻게 하는지 알려주세요.`],
+[27,3,`클리셰인 분할 화면을 피한 [product]의 비포/애프터 포스터를 디자인하세요: 더 새롭고 신선한 레이아웃 기법 3가지와 그중 최고에 대한 이미지 생성 프롬프트를 제시하세요.`],
+[28,3,`당신은 럭셔리 브랜드 디자이너입니다. 이 대중용 포스터를 프리미엄으로 느껴지게 재디자인하세요: [describe]. 무엇이 제거되고, 무엇이 속도를 늦추며, 왜 이미지가 적을수록 인지되는 가격이 올라가는지 설명하세요.`],
+[29,3,`라이프스타일 포스터용 이미지 생성 프롬프트를 작성하세요: [audience]가 [setting]에서 사용하는 [product], [film/photographer]의 프레임처럼 촬영 — 빛의 품질, 색감 처리, 현실감을 주는 결함(불완전함) 세부사항을 포함하세요.`],
+[30,3,`포스터 테스트 계획을 만드세요: 각기 한 가지 변수(헤드라인, 시각적 은유, 색상)를 고립시킨 [product]용 포스터 변형 3개를 만들어 광고 결과가 왜 승자가 되었는지 알려주세요.`],
+[31,4,`당신은 소셜 아트 디렉터입니다. [brand]의 인스타그램 시각 시스템을 정의하세요: 3가지 게시물 템플릿, 색상 순환 논리, 타이포 계층 구조, 그리고 핸들이 없어도 낯선 사람이 우리 게시물을 알아볼 수 있게 하는 규칙.`],
+[32,4,`[brand/product]의 9포스트 그리드 런치를 설계하세요: 각 타일이 무엇을 보여주는지, 그리드가 하나의 이미지로 읽히는 방식, 그리고 전환용(컨버전) 고정 게시물로 사용할 3개의 타일.`],
+[33,4,`[content type]용 캐러셀 템플릿 시스템을 만드세요: 커버 공식, 내부 슬라이드 그리드, 진행 인디케이터, CTA 슬라이드에서의 시각적 변화. HTML로 만들 수 있을 만큼 정확히 설명하세요.`],
+[34,4,`당신은 밈에 능숙한 디자이너입니다. 브랜드를 훼손하지 않으면서 밈 포맷에 맞게 [brand]의 시각 시스템을 적용하세요: 어떤 규칙이 유연하게 바뀔 수 있는지(폰트? 색상?), 어떤 규칙은 절대 바뀌면 안 되는지, 그리고 예시 콘셉트 3개를 제시하세요.`],
+[35,4,`이 장문의 콘텐츠를 7슬라이드짜리 캐러셀로 아트디렉팅하세요: [paste content]. 슬라이드별로 텍스트, 비주얼, 그리고 다음 슬라이드로 이어지는 호기심 연결(bridge)을 제시하세요.`],
+[36,4,`[brand]용 스토리 하이라이트 커버를 디자인하세요: 아이콘 스타일, 배경 처리, 그리고 이름이 10자 이내인 8개 하이라이트 카테고리.`],
+[37,4,`[brand]의 소셜 사진을 위한 사진 보정 레시피를 만드세요: 컬러 그레이드 설명, 명암/채도 규칙, 크롭 철학, 그리고 어떤 프리랜서라도 따를 수 있는 편집 체크리스트.`],
+[38,4,`당신은 페이드 소셜(유료 소셜) 디자이너입니다. 이 유기적 게시물을 광고로 재설계하세요: [describe post]. 1.5초 스크롤 속도에서 무엇이 변해야 하는가 — 텍스트 크기, 대비, 초점 포인트 — 그리고 그 이유.`],
+[39,4,`다른 인용 게시물들과 닮지 않은 [brand]용 인용(quote) 게시물 시스템을 디자인하세요: 타입 레이아웃, 출처 표기 방식, 배경 시스템, 그리고 이미지 생성기용으로 설명된 예시 렌더 2개.`],
+[40,4,`최근 12개 게시물의 시각적 일관성을 감사(audit)하세요: [attach/describe]. 응집도를 1-10으로 점수화하고, 가장 큰 시스템 붕괴 3가지를 식별한 뒤 이를 고치기 위한 최소 규칙을 제시하세요.`],
+[41,5,`당신은 패키지 디자이너입니다. [product]의 박스를 설계하세요: 구조, 전면 패널 계층(2m, 50cm, 손에 들었을 때 각각 읽히는 항목), 소재/마감, 그리고 사람들이 사진으로 찍는 단 하나의 디테일.`],
+[42,5,`[product]의 언박싱 시퀀스를 5단계 순간으로 만드세요 — 겉박스, 개봉, 첫 공개, 제품 들어올리기, 숨겨진 메모 — 각 순간이 유발해야 할 감정과 함께.`],
+[43,5,`붐비는 카테고리에서 [product]의 라벨을 디자인하세요: 모든 경쟁사의 라벨이 하는 일(동일성의 바다를 설명하세요), 그리고 가독성을 유지하면서 우리의 라벨이 패턴을 깨는 3가지 방식.`],
+[44,5,`당신은 지속가능성 컨설턴트입니다. [product]의 패키징을 재설계해 재료를 30% 절감하되 진열 존재감을 잃지 마세요 — 구조 아이디어, 소재 교체안, 그리고 온팩(on-pack)으로 변경을 어떻게 표기할지.`],
+[45,5,`[product] 패키징의 카피 시스템을 작성하세요: 전면 주장(최대 5단어), 백스토리(50단어), 사용 단계, 그리고 어딘가 예상치 못한 곳에 숨겨 둔 작은 기쁨의 문구.`],
+[46,5,`[product] x [season/event]를 위한 한정판 패키징 컨셉 3가지를 만드세요: 무엇이 바뀌는가(색상, 일러스트레이션, 구조), 무엇을 신성하게 지키는가, 그리고 수집가 논리.`],
+[47,5,`[product line]의 패키지 범위 아키텍처를 [N]개의 버전으로 설계하세요: 고정 시스템 vs 가변 요소들, 그래서 한눈에 패밀리로 읽히도록.`],
+[48,5,`당신은 인쇄 제작 전문가입니다. 이 패키징 디자인을 인쇄용으로 스펙하세요: [describe]. 색상(CMYK/Pantone 논리), 마감(어디에, 왜), 다이라인 고려사항, 피해야 할 3가지 비용 함정.`],
+[49,5,`팩샷용 이미지 생성 프롬프트를 작성하세요: [surface] 위의 [product] 패키징, [lighting style] 조명, 스튜디오 퀄리티, 소재 텍스처가 드러나도록 — 실제 제품 사진처럼 보일 만큼 정밀하게.`],
+[50,5,`이 패키징을 이커머스 우선으로 재설계하세요: [describe]. '선반'이 100px 썸네일이고 실제 언박싱은 집에서 카메라로 촬영될 때 무엇이 바뀌는가.`],
+[51,6,`당신은 제품 디자이너입니다. [app]의 온보딩 흐름을 설계하세요: 화면별(최대 4개 화면), 각 화면이 요구하는 단 하나의 행동, 그리고 가입을 요청하기 전에 가치를 보여줄 위치.`],
+[52,6,`이 화면을 디자인 리드처럼 비평하세요: [describe/attach]. 계층, 어포던스(affordance), 인지 부하, 접근성 — 영향 대비 노력 비율이 가장 높은 3가지 변경을 먼저.`],
+[53,6,`[product]용 디자인 시스템 스타터를 만드세요: 타입 스케일(픽셀 값 포함), 간격 스케일, 색상 토큰(의미적 이름 + hex), 버튼 계층, 그리고 모서리 반경 철학을 한 줄로.`],
+[54,6,`[app]의 주요 3개 화면에 대한 빈 상태(empty states)를 설계하세요: 첫 사용, 결과 없음, 오류 — 각각 카피, 일러스트 콘셉트, 공허함을 채울 행동을 포함.`],
+[55,6,`당신은 UX 라이터입니다. 이 인터페이스 카피를 다시 작성하세요. 모든 버튼이 다음에 무슨 일이 일어나는지 말하고 모든 오류가 어떻게 해결하는지 알려주도록: [paste strings].`],
+[56,6,`[app]에서의 [task]에 대한 사용자 여정을 현재 상태(as it is)와 있어야 하는 상태(as it should be)로 매핑하세요: 단계, 감정, 이탈 위험 — 그런 다음 가장 나쁜 두 순간을 자세히 재설계하세요.`],
+[57,6,`[product]의 3개 등급 가격 페이지를 설계하세요: 레이아웃, 앵커 로직, 기능 표 규칙(최대 7행), FAQ 배치, 그리고 마지막 의심을 없애는 CTA 아래의 마이크로카피.`],
+[58,6,`당신은 접근성 감사관입니다. 이 디자인을 검토하세요: [describe]. 명암 대비, 터치 대상 크기, 포커스 순서, 모션 민감성 — 각 항목에 대해 통과/불합격과 수정 방안을 제시하세요. 모호한 조언은 금지.`],
+[59,6,`[N]개의 핵심 기능을 가진 [app]의 모바일 내비게이션 구조를 만드세요: 탭 바 슬롯을 얻는 기준, 어떤 항목이 네스트되는지, 새 최상위 항목에 '아니오'라고 하는 규칙.`],
+[60,6,`[app]의 'aha moment' 화면을 설계하세요 — 사용자가 처음으로 제품이 작동하는 것을 보는 순간. 어떤 데이터/결과를 보여줄지, 색종이 폭죽(cloud of confetti) 클리셰 없이 어떻게 축하할지, 그리고 공유 훅.`],
+[61,7,`당신은 전환 디자이너입니다. [offer]용 랜딩 페이지의 와이어프레임을 작성하세요: 각 섹션의 순서와 각 섹션의 역할, 히어로 레이아웃, 신뢰 요소(증거)가 위치하는 곳, 그리고 단 하나의 CTA가 몇 번 반복되는지.`],
+[62,7,`[product]의 히어로 섹션을 작성하고 아트 디렉션하세요: 헤드라인(10단어 미만), 서브헤드, CTA 레이블, 이미지 생성기용으로 설명된 히어로 비주얼 — 그리고 폴드 로직을 설명하세요.`],
+[63,7,`이 랜딩 페이지를 콜드 트래픽 대상자용으로 섹션별로 재설계하세요: [paste URL/describe]. 어떤 요소가 위로 올라가고, 어떤 요소가 사라지며, 현재 페이지가 아무도 묻지 않은 질문에 어디에서 답하고 있는지.`],
+[64,7,`[offer]의 페이지에 대한 소셜 프루프 전략을 만드세요: 어떤 스크롤 깊이에서 어떤 유형의 증거(로고, 수치, 추천사, 사례 연구)를 배치할지, 그리고 각 증거를 건너뛰지 않고 훑어보게끔 어떻게 형식화할지.`],
+[65,7,`당신은 랜딩 페이지 카피라이터입니다. 이 고객 인터뷰 노트를 페이지의 목소리로 바꾸세요 — 헤드라인과 섹션 카피를 그들이 사용한 표현으로 작성하세요: [paste notes].`],
+[66,7,`비교 섹션을 설계하세요: [product] vs 대안들(경쟁사 이름은 언급하지 않음). 우리가 정직하게 우위에 있는 기준 행들, 우리가 인정해서 한 행은 양보하는 항목(그리고 그것이 왜 신뢰를 쌓는지)을 포함하세요.`],
+[67,7,`[page]용 히어로 A/B 테스트 3가지를 만드세요: 이점 중심(benefit-led) vs 문제 중심(pain-led) vs 호기심 중심(curiosity-led). 동일한 오퍼, 동일한 레이아웃 — 메시지 전략만 변경됩니다. [traffic source]에 대해 승자를 예측하세요.`],
+[68,7,`당신은 페이지 속도 실용주의자입니다. [page]를 아름답게 유지하면서 로드 시간을 2초 이하로 유지할 10가지 디자인 결정을 나열하세요: 이미지 전략, 폰트 제한, 애니메이션 예산, 서드파티 규칙.`],
+[69,7,`판매되도록 FAQ 섹션을 설계하세요: [offer]에 대해 진짜 반대 의견인 6개 질문을 고르고, 구매를 막는 힘 순서대로 정렬한 뒤, 미니 CTA로 마무리되는 답변을 작성하세요.`],
+[70,7,`[high-ticket offer]용 장문 세일즈 페이지를 이야기 형식으로 와이어프레임하세요: 스크롤 깊이마다 독자의 내적 독백에 매핑된 12개 섹션 — 그들이 무엇을 생각하는지, 우리가 무엇을 보여주는지.`],
+[71,8,`당신은 타입 디렉터입니다. [brand]를 위해 글꼴을 페어링하세요: 디스플레이 + 본문 + 모노 악센트. 실제 폰트 이름(무료 옵션 포함), 구매/로딩할 웨이트, 그리고 페어링의 성격을 뒷받침하는 근거를 제시하세요.`],
+[72,8,`[project]용 전체 타입 스케일을 작성하세요: 캡션에서 디스플레이까지 각 크기의 px 값, 라인-하이트(행간), 레벨별 자간, 그리고 스케일이 드라마를 위해 의도적으로 깨지는 지점을 표시하세요.`],
+[73,8,`이 디자인의 타이포그래피를 비평하세요: [describe/attach]. 계층(위계)의 명확성, 행 길이, 리듬, 와이도우/오팬(widows/orphans) — 이것을 가장 전문적으로 만드는 세 가지 수정 사항을 제시하세요.`],
+[74,8,`[brand]의 소셜 게시물용 타이포그래피 규칙을 만드세요: 슬라이드당 최대 단어 수, 크기 관계, 악센트 웨이트를 사용하는 시점, 그리고 시그니처가 될 단 하나의 처리(밑줄? 박스? 단어에 색상?)를 정하세요.`],
+[75,8,`당신은 레터링 아티스트입니다. '[word]'라는 단어를 [use]용으로 맞춤 타이포그래피 처리하는 방법을 설명하세요: 구성, 수정, 질감 — 이미지 생성 프롬프트로 사용할 수 있게 기술하세요.`],
+[76,8,`[multilingual project]용 타이포그래피를 선택하세요([languages/scripts] 포함): 실제 커버리지를 가진 폰트 패밀리, 대체(fallback) 로직, 그리고 스크립트가 혼합될 때 빠지기 쉬운 3가지 레이아웃 함정을 제시하세요.`],
+[77,8,`[brand]용 타입 전용 브랜드 캠페인을 디자인하세요: 타이포그래피가 곧 시각인 5개의 헤드라인 포스트. 각 포스트의 카피를 제시하고 타이포그래피 처리를 설명하세요.`],
+[78,8,`당신은 가독성 과학자입니다. [medium: app/web/print]용 본문 규칙을 설정하세요: 최적 크기, 문자 수 기준 행 길이, 행간, 대비 최소치 — 단순한 수치가 아니라 그 근거까지 제시하세요.`],
+[79,8,`이 인용구를 받아 타입만으로 세 가지 방식으로 아트디렉팅하세요 — 브루탈리스트, 우아한 에디토리얼, 장난기 있는 기하학적: '[paste quote]'. 각 레이아웃을 정확하게 묘사하세요.`],
+[80,8,`[brand]의 타이포그래피용 금지 목록을 만드세요: 8가지 구체적인 '범죄'(늘이기, 대문자에 과도한 트래킹, 긴 텍스트 중앙 정렬…)와 각 항목을 대체할 규칙을 제시하세요.`],
+[81,9,`당신은 썸네일 전략가입니다. [title]라는 제목의 동영상을 위해 썸네일 콘셉트 5개를 제시하세요: 중심 이미지, 텍스트 오버레이(최대 3단어), 색상 전략, 각 콘셉트가 만들어내는 호기심의 간극.`],
+[82,9,`[niche] 분야의 상위 썸네일들을 분석하세요(알고 있는 패턴을 설명). 그 패턴에 충분히 맞춰 '속해 보이게' 하되 눈에 띄기 위해 한 가지 규칙을 깨는 썸네일 하나를 디자인하세요. 제가 깨는 규칙을 설명하세요.`],
+[83,9,`[video]의 썸네일 A/B 쌍을 만드세요: 얼굴 반응 버전 vs 대상 호기심 버전. 이미지 생성기용으로 둘 다 설명하고, 제목은 동일하게 유지하며 [audience]에게 어느 쪽이 더 잘 통할지 예측하세요.`],
+[84,9,`당신은 CTR(클릭률) 의사입니다. 제 썸네일 평균 클릭률은 [X]%입니다 — 제 스타일은 이렇습니다: [describe]. 클릭을 가장 많이 갉아먹는 3가지 원인(가독성? 단조로움? 약한 감정 표현?)을 진단하고 각 원인에 대한 해결책을 제시하세요.`],
+[85,9,`[content type] 시리즈를 위한 썸네일 템플릿 시스템을 설계하세요: 일관된 레이아웃 영역(얼굴, 텍스트, 소품), 에피소드 유형별 색상 코드, 그리고 에피소드마다 바뀌는 요소와 유지되는 요소를 정리하세요.`],
+[86,9,`썸네일용 이미지 생성 프롬프트를 작성하세요: [subject]가 [emotion]인 장면, [angle]에서 촬영된 앵글, 배경 [colour/scene], 오른쪽 상단에 3단어를 위한 공간을 비워두세요 — YouTube 최적화 대비.`],
+[87,9,`이 지루한 썸네일 아이디어 3개를 '스크롤을 멈추게 하는' 것으로 재설계하세요(긴장감이나 대비 추가): [describe ideas]. 각 아이디어에 대해 변경 전/후의 논리를 보여주세요.`],
+[88,9,`[video]에 대해 클릭을 유도하는 YouTube 썸네일 콘셉트를 디자인하세요. 다음을 제시하세요: 중심 피사체, 감정, 최대 3단어 텍스트 오버레이, 색상 대비 계획, 그리고 16:9 비율의 정확한 이미지 생성 프롬프트.`],
+[89,9,`당신은 모바일 우선 디자이너입니다. 이 썸네일 콘셉트를 가로 120px 환경에서도 살아남게 만드세요: [describe]. 무엇이 단순화되고, 무엇이 확대되고, 무엇이 사라지는지 설명하세요.`],
+[90,9,`[video]의 썸네일 텍스트 옵션을 만드세요: 제목을 반복하지 않고 제목과 긴장을 만들어내는 2-3단어 오버레이 10개. 놀란 표정과 가장 잘 어울리는 3개를 표시하세요.`],
+[91,10,`당신은 피치덱 디자이너입니다. [company]의 12장 투자 덱 구조를 설계하세요: 장별 한 문장 메시지, 그 장을 지탱할 근거 자료, 그리고 심사역이 3분 만에 덮어버리는 지점 3곳과 각각의 방어 논리.`],
+[92,10,`[topic] 강의 교안의 마스터 슬라이드 시스템을 만드세요: 표지·간지·본문·도표·마무리 5종 레이아웃, 타입 스케일(px), 여백 규칙, 그리고 한 장에 절대 넘기지 않을 최대 요소 수.`],
+[93,10,`이 슬라이드를 아트 디렉터처럼 비평하세요: [describe/attach]. 정보 위계, 시선 흐름, 텍스트 과잉을 다루고 — 가장 적은 노력으로 가장 크게 좋아지는 수정 3가지를 순서대로 제시하세요.`],
+[94,10,`[data]를 한 장의 슬라이드로 압축하세요: 차트 유형을 고른 근거, 강조할 단 하나의 수치, 지워야 할 축·범례·눈금, 그리고 청중이 소리 내어 읽게 될 헤드라인 문장.`],
+[95,10,`당신은 스토리 컨설턴트입니다. [proposal]을 문제-전환-해결-증거-제안의 5막 구조로 재배열하고, 각 막의 감정 온도와 그 막에서 청중이 속으로 던질 질문을 함께 쓰세요.`],
+[96,10,`[brand] 제안서의 표지 시안 3가지를 설계하세요: 각 시안의 시각적 은유, 타이포 처리, 색 운용 — 그리고 인쇄 제본본과 화면 PDF에서 각각 어떻게 달라져야 하는지.`],
+[97,10,`발표자 노트를 작성하세요: [slide topic] 슬라이드에 대해 90초 분량의 구어체 스크립트, 첫 문장 훅, 그리고 시간이 부족할 때 가장 먼저 잘라낼 문장을 표시하세요.`],
+[98,10,`당신은 인포그래픽 디자이너입니다. [process]를 한 장의 다이어그램으로 시각화하세요: 도형 어휘, 흐름 방향, 라벨 규칙, 그리고 흑백 인쇄에서도 읽히게 만드는 대비 전략.`],
+[99,10,`[deck]을 화면 발표용과 배포용(읽는 문서) 두 버전으로 분리하세요: 어떤 요소가 텍스트로 늘어나고, 어떤 요소가 사라지며, 하나의 파일로 두 가지를 겸하면 왜 둘 다 실패하는지.`],
+[100,10,`당신은 프레젠테이션 감독입니다. [presentation]의 리허설 체크리스트를 만드세요: 장별 시간 배분, 청중의 집중이 꺼지는 구간 예측, 그리고 예상 질문 8개와 각각의 한 줄 답변.`]
+];
+</script>
+<script>
+(function(){
+  'use strict';
+  var ITEMS = P.map(function(r){ return {n:r[0], c:r[1], t:r[2]}; });
+
+  /* ---- 안전한 저장소: 로컬 저장이 막힌 환경에서는 메모리로 대체 ---- */
+  var mem = {};
+  var store = {
+    get:function(k){ try{ return localStorage.getItem(k); }catch(e){ return mem[k]||null; } },
+    set:function(k,v){ try{ localStorage.setItem(k,v); }catch(e){ mem[k]=v; } }
+  };
+  var favs = new Set(JSON.parse(store.get('bb100.favs')||'[]'));
+  var done = new Set(JSON.parse(store.get('bb100.done')||'[]'));
+
+  var listEl=document.getElementById('list'), railEl=document.getElementById('rail'),
+      chipbar=document.getElementById('chipbar'), qEl=document.getElementById('q'),
+      cntEl=document.getElementById('cnt'), toastEl=document.getElementById('toast');
+
+  var state = {q:'', cat:0, favOnly:false};
+
+  function esc(s){ return s.replace(/[&<>]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[m];}); }
+
+  /* 대괄호 자리표시자를 강조하고, 검색어를 하이라이트 */
+  function fmt(t, q){
+    var h = esc(t).replace(/\[[^\]]+\]/g, function(m){ return '<b>'+m+'</b>'; });
+    if(q){
+      var re = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      h = h.replace(/(>[^<]+)/g, function(seg){ return seg.replace(re,'<mark>$1</mark>'); });
+    }
+    return h;
+  }
+
+  function match(it){
+    if(state.favOnly && !favs.has(it.n)) return false;
+    if(state.cat && it.c !== state.cat) return false;
+    var q = state.q.trim().toLowerCase();
+    if(!q) return true;
+    var cat = CATS[it.c-1];
+    var hay = (it.t + ' ' + cat.name + ' ' + cat.sub + ' ' + String(it.n).padStart(3,'0')).toLowerCase();
+    return q.split(/\s+/).every(function(w){ return hay.indexOf(w) > -1; });
+  }
+
+  function card(it){
+    var id = String(it.n).padStart(3,'0');
+    return '<button class="pc'+(done.has(it.n)?' used':'')+'" data-n="'+it.n+'" aria-label="프롬프트 '+id+' 복사">'
+      + '<div class="no">'+id+'</div>'
+      + '<p class="tx">'+fmt(it.t, state.q.trim())+'</p>'
+      + '<div class="act"><span class="hint">눌러서 복사</span>'
+      + '<span class="fav'+(favs.has(it.n)?' on':'')+'" role="button" tabindex="0" data-fav="'+it.n+'" aria-label="즐겨찾기">'+(favs.has(it.n)?'★':'☆')+'</span></div>'
+      + '<div class="wipe">복사됨 <span>'+id+'</span></div>'
+      + '</button>';
+  }
+
+  function render(){
+    var shown = ITEMS.filter(match);
+    if(!shown.length){
+      listEl.innerHTML = '<div class="empty"><b>조건에 맞는 프롬프트가 없습니다</b>검색어를 줄이거나 카테고리를 전체로 되돌려 보세요.</div>';
+      return;
+    }
+    var html='';
+    CATS.forEach(function(c,i){
+      var group = shown.filter(function(it){ return it.c === i+1; });
+      if(!group.length) return;
+      html += '<section class="cat" id="c'+c.n+'">'
+        + '<div class="cathead"><span class="num">'+c.n+'</span><h2>'+c.name+'</h2><span class="sub">'+c.sub+'</span></div>'
+        + '<div class="grid">'+group.map(card).join('')+'</div></section>';
+    });
+    listEl.innerHTML = html;
+  }
+
+  /* ---- 사이드 레일 / 카테고리 칩 ---- */
+  railEl.innerHTML = CATS.map(function(c){
+    return '<a href="#c'+c.n+'" data-r="'+c.n+'"><i>'+c.n+'</i><b>'+c.name+'</b></a>';
+  }).join('');
+
+  chipbar.innerHTML = '<button class="tg" data-cat="0" aria-pressed="true">전체 100</button>'
+    + CATS.map(function(c,i){ return '<button class="tg" data-cat="'+(i+1)+'" aria-pressed="false">'+c.n+' '+c.name+'</button>'; }).join('')
+    + '<span class="spacer"></span>'
+    + '<button class="tg star" id="favBtn" aria-pressed="false">★ 즐겨찾기</button>'
+    + '<button class="tg" id="dlBtn">전체 텍스트 저장</button>';
+
+  chipbar.addEventListener('click', function(e){
+    var b = e.target.closest('button[data-cat]');
+    if(b){
+      state.cat = +b.dataset.cat;
+      chipbar.querySelectorAll('button[data-cat]').forEach(function(x){ x.setAttribute('aria-pressed', x===b?'true':'false'); });
+      render();
+      return;
+    }
+    if(e.target.id === 'favBtn'){
+      state.favOnly = !state.favOnly;
+      e.target.setAttribute('aria-pressed', state.favOnly?'true':'false');
+      render();
+      return;
+    }
+    if(e.target.id === 'dlBtn') download();
+  });
+
+  /* ---- 복사 ---- */
+  function copy(text){
+    if(navigator.clipboard && window.isSecureContext){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(res, rej){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try{ ok = document.execCommand('copy'); }catch(e){}
+      document.body.removeChild(ta);
+      ok ? res() : rej();
+    });
+  }
+
+  var tt;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(tt);
+    tt = setTimeout(function(){ toastEl.classList.remove('show'); }, 1900);
+  }
+
+  listEl.addEventListener('click', function(e){
+    var f = e.target.closest('[data-fav]');
+    if(f){
+      e.stopPropagation();
+      var fn = +f.dataset.fav;
+      if(favs.has(fn)){ favs.delete(fn); f.classList.remove('on'); f.textContent='☆'; }
+      else { favs.add(fn); f.classList.add('on'); f.textContent='★'; }
+      store.set('bb100.favs', JSON.stringify([].concat(Array.from(favs))));
+      if(state.favOnly) render();
+      return;
+    }
+    var pc = e.target.closest('.pc');
+    if(!pc) return;
+    var n = +pc.dataset.n;
+    var it = ITEMS.filter(function(x){ return x.n===n; })[0];
+    copy(it.t).then(function(){
+      pc.classList.add('copied');
+      setTimeout(function(){ pc.classList.remove('copied'); pc.classList.add('used'); }, 900);
+      if(!done.has(n)){
+        done.add(n);
+        store.set('bb100.done', JSON.stringify(Array.from(done)));
+        cntEl.textContent = done.size;
+      }
+      toast('프롬프트 ' + String(n).padStart(3,'0') + ' 복사됨 — 클로드에 붙여넣으세요');
+    }).catch(function(){
+      var r = document.createRange();
+      r.selectNodeContents(pc.querySelector('.tx'));
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      toast('텍스트를 선택해 두었습니다. Ctrl/⌘ + C 로 복사하세요');
+    });
+  });
+
+  /* ---- 전체 텍스트 저장 ---- */
+  function download(){
+    var out = '클로드디자인100_BB — 100 CLAUDE 디자인 프롬프트\nby Brandbuilder | b612pink@naver.com\n\n';
+    CATS.forEach(function(c,i){
+      out += '\n[' + c.n + '] ' + c.name + ' — ' + c.sub + '\n' + '-'.repeat(52) + '\n';
+      ITEMS.filter(function(it){ return it.c === i+1; }).forEach(function(it){
+        out += String(it.n).padStart(3,'0') + '. ' + it.t + '\n\n';
+      });
+    });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([out], {type:'text/plain;charset=utf-8'}));
+    a.download = '클로드디자인100_BB.txt';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    toast('100개 프롬프트를 텍스트 파일로 저장했습니다');
+  }
+
+  /* ---- 검색 ---- */
+  var qt;
+  qEl.addEventListener('input', function(){
+    clearTimeout(qt);
+    qt = setTimeout(function(){ state.q = qEl.value; render(); }, 120);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === '/' && document.activeElement !== qEl){ e.preventDefault(); qEl.focus(); }
+    if(e.key === 'Escape' && document.activeElement === qEl){ qEl.value=''; state.q=''; render(); qEl.blur(); }
+  });
+
+  /* ---- 레일 현재 위치 표시 ---- */
+  var spy;
+  window.addEventListener('scroll', function(){
+    clearTimeout(spy);
+    spy = setTimeout(function(){
+      var secs = listEl.querySelectorAll('section.cat'), cur = null;
+      secs.forEach(function(s){ if(s.getBoundingClientRect().top < 200) cur = s.id.slice(1); });
+      railEl.querySelectorAll('a').forEach(function(a){ a.classList.toggle('on', a.dataset.r === cur); });
+    }, 80);
+  }, {passive:true});
+
+  cntEl.textContent = done.size;
+  render();
+})();
+
+</script>
+</body>
+</html>
